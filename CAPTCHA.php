@@ -1,7 +1,7 @@
 <?php
 #################################################################################################################
 ## - Completely Automated Public Turing test to tell Computers and Humans Apart Written by: Devji Chhanga	#																			#
-## - See: Readme File.												#
+## - See Readme													#												#
 #################################################################################################################
 
 function getRandChr()	//Function to generate random alphabet
@@ -16,7 +16,7 @@ function getRandChr()	//Function to generate random alphabet
 
 function writeImage($width, $height, $strLen, $fontSize, $angMax, $font, $penColorRGB, $backColorRGB)
 {
-	$im = Imagecreate(220, 90);
+	$im = Imagecreate($width, $height);
 	$backColorArray = explode (',', $backColorRGB);	//Get RGB componenets from string
 	$penColorArray = explode (',', $penColorRGB);
 	$backColor = imagecolorallocate($im, $backColorArray[0], $backColorArray[1], $backColorArray[2]);	//allocate color for background
